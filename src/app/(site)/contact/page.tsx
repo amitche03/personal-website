@@ -36,11 +36,18 @@ export default function ContactPage() {
         >
           <div className="flex items-center gap-4">
             <div className="relative h-10 w-10 overflow-hidden rounded-lg bg-black">
-              <Image src="/github-mark-white.png" alt="GitHub" fill className="object-contain p-1" />
+              <Image
+                src="/github-mark-white.png"
+                alt="GitHub"
+                fill
+                className="object-contain p-1"
+              />
             </div>
             <div>
               <div className="font-semibold">GitHub</div>
-              <div className="text-sm text-white/60 group-hover:text-white/80">@amitche03</div>
+              <div className="text-sm text-white/60 group-hover:text-white/80">
+                @amitche03
+              </div>
             </div>
           </div>
         </Link>
@@ -53,11 +60,18 @@ export default function ContactPage() {
         >
           <div className="flex items-center gap-4">
             <div className="relative h-10 w-10 overflow-hidden rounded-lg">
-              <Image src="/LinkedIn SVG Icon.svg" alt="LinkedIn" fill className="object-contain p-1" />
+              <Image
+                src="/LinkedIn SVG Icon.svg"
+                alt="LinkedIn"
+                fill
+                className="object-contain p-1"
+              />
             </div>
             <div>
               <div className="font-semibold">LinkedIn</div>
-              <div className="text-sm text-white/60 group-hover:text-white/80">/in/mitchell-s-anderson</div>
+              <div className="text-sm text-white/60 group-hover:text-white/80">
+                /in/mitchell-s-anderson
+              </div>
             </div>
           </div>
         </Link>
@@ -65,15 +79,23 @@ export default function ContactPage() {
         {/* Email */}
         <button
           onClick={copyEmail}
+          aria-label="Copy email to clipboard"
           className="group relative flex min-h-[96px] items-center rounded-2xl border border-white/10 bg-white/[0.02] p-5 text-left transition hover:-translate-y-0.5 hover:bg-white/[0.04]"
         >
           <div className="flex items-center gap-4">
             <div className="relative h-10 w-10 overflow-hidden rounded-lg">
-              <Image src="/Email Vector Icon.svg" alt="Email" fill className="object-contain p-1" />
+              <Image
+                src="/Email Vector Icon.svg"
+                alt="Email"
+                fill
+                className="object-contain p-1 dark:invert"
+              />
             </div>
             <div>
               <div className="font-semibold">Email</div>
-              <div className="text-sm text-white/60 group-hover:text-white/80">{email}</div>
+              <div className="text-sm text-white/60 group-hover:text-white/80">
+                {email}
+              </div>
             </div>
           </div>
           {copied && (
@@ -85,7 +107,14 @@ export default function ContactPage() {
       </div>
 
       <div className="mt-10 text-sm text-white/60">
-        Prefer a quick chat? <a className="text-emerald-400 hover:text-emerald-300" href={`mailto:${email}`}>Send an email</a> with a time.
+        Prefer a quick chat?{" "}
+        <a
+          className="text-emerald-400 hover:text-emerald-300 font-semibold"
+          href={`mailto:${email}`}
+        >
+          Schedule
+        </a>{" "}
+        a time.
       </div>
     </div>
   );

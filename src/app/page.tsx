@@ -62,9 +62,9 @@ export default function Home() {
           <div className="text-sm text-white/70">TypeScript, Python, GCS</div>
         </div>
         <div className="rounded-2xl border border-white/10 p-6">
-          <div className="text-3xl font-bold">Open to work</div>
+          <div className="text-2xl font-bold">Incoming @ ServiceNow</div>
           <div className="text-sm text-white/70">
-            Let’s build something great
+            Associate Software Engineer
           </div>
         </div>
       </div>

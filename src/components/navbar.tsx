@@ -15,7 +15,7 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-background/70 backdrop-blur">
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="text-lg font-semibold tracking-tight">
             MA

@@ -21,12 +21,16 @@ export default function AboutPage() {
         </div>
         <div className="rounded-xl border border-white/10 bg-white/[0.03] p-6 shadow-sm">
           <div className="text-sm text-white/60">Location</div>
-          <div className="mt-1 text-lg font-semibold">Winston‑Salem ➜ Chapel Hill</div>
+          <div className="mt-1 text-lg font-semibold">
+            Winston‑Salem ➜ Chapel Hill
+          </div>
           <div className="text-white/60">North Carolina</div>
         </div>
         <div className="rounded-xl border border-white/10 bg-white/[0.03] p-6 shadow-sm">
           <div className="text-sm text-white/60">Focus</div>
-          <div className="mt-1 text-lg font-semibold">Full‑stack Engineering</div>
+          <div className="mt-1 text-lg font-semibold">
+            Full‑stack Engineering
+          </div>
           <div className="text-white/60">TypeScript, React/Next.js, Python</div>
         </div>
       </div>
@@ -45,7 +49,9 @@ export default function AboutPage() {
                 to grow community, events, and awareness.
               </p>
               <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-white/70">
-                <li>Chief Marketing Officer — led student outreach & marketing</li>
+                <li>
+                  Chief Marketing Officer — led student outreach & marketing
+                </li>
                 <li>iOS Developer — contributed to shipped app features</li>
               </ul>
             </div>
@@ -53,9 +59,9 @@ export default function AboutPage() {
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6">
               <h3 className="font-semibold">UNC Business Technology Club</h3>
               <p className="mt-1 text-sm text-white/70">
-                Assistant Director of Events & Programming. Organized
-                networking events connecting undergraduates with companies in
-                business and technology.
+                Assistant Director of Events & Programming. Organized networking
+                events connecting undergraduates with companies in business and
+                technology.
               </p>
             </div>
           </div>
@@ -63,7 +69,9 @@ export default function AboutPage() {
 
         {/* Teaching */}
         <section>
-          <h2 className="mb-3 text-xl font-semibold">Teaching Assistantships</h2>
+          <h2 className="mb-3 text-xl font-semibold">
+            Teaching Assistantships
+          </h2>
           <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6">
             <ul className="grid gap-2 text-sm text-white/80 md:grid-cols-2">
               <li>
@@ -87,7 +95,9 @@ export default function AboutPage() {
           <h2 className="mb-3 text-xl font-semibold">Selected Projects</h2>
           <div className="grid gap-6 md:grid-cols-2">
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6">
-              <h3 className="font-semibold">Luminairy — Accessible Navigation</h3>
+              <h3 className="font-semibold">
+                Luminairy — Accessible Navigation
+              </h3>
               <p className="mt-1 text-sm text-white/70">
                 iOS app for accessible campus navigation; collaborated with
                 researchers for user testing and validation.
@@ -111,19 +121,27 @@ export default function AboutPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
               <div className="text-sm font-medium">Frontend</div>
-              <div className="mt-1 text-sm text-white/70">TypeScript, React, Next.js, Tailwind</div>
+              <div className="mt-1 text-sm text-white/70">
+                TypeScript, React, Next.js, Tailwind
+              </div>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
               <div className="text-sm font-medium">Backend</div>
-              <div className="mt-1 text-sm text-white/70">Node, Python, Flask, REST</div>
+              <div className="mt-1 text-sm text-white/70">
+                Node, Python, Java, Flask, REST
+              </div>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
               <div className="text-sm font-medium">Data & Cloud</div>
-              <div className="mt-1 text-sm text-white/70">GCS, Trino/Munin, Docker</div>
+              <div className="mt-1 text-sm text-white/70">
+                GCS, Trino/Munin, Docker
+              </div>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
               <div className="text-sm font-medium">Mobile</div>
-              <div className="mt-1 text-sm text-white/70">SwiftUI, React Native</div>
+              <div className="mt-1 text-sm text-white/70">
+                SwiftUI, React Native
+              </div>
             </div>
           </div>
         </section>
@@ -132,8 +150,8 @@ export default function AboutPage() {
         <section>
           <h2 className="mb-3 text-xl font-semibold">Beyond the Code</h2>
           <p className="mb-4 max-w-2xl text-white/70">
-            Outside of engineering, I recharge by staying active and exploring new
-            experiences. Here are a few things I’m into right now:
+            Outside of engineering, I recharge by staying active and exploring
+            new experiences. Here are a few things I’m into right now:
           </p>
           <div className="mb-5 flex flex-wrap gap-2">
             {[
