@@ -88,7 +88,7 @@ export default function InterestsPage() {
       <div className="mb-8">
         <h1 className="text-4xl font-bold">Interests</h1>
         <p className="mt-2 max-w-2xl text-white/70">
-          Outside of school, here's what I've been learning and implementing.
+          Outside of school, here&apos;s what I&apos;ve been learning and implementing.
         </p>
       </div>
 

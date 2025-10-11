@@ -12,7 +12,7 @@ export default function ContactPage() {
       await navigator.clipboard.writeText(email);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    } catch (e) {
+    } catch {
       // fallback: open mailto if clipboard not available
       window.location.href = `mailto:${email}`;
     }
