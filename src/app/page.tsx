@@ -1,103 +1,73 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="py-20">
+      <div className="grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <p className="mb-3 text-sm uppercase tracking-wide text-white/60">
+            Hi there <span className="ml-1">👋</span> I’m
+          </p>
+          <h1 className="mb-3 text-5xl font-extrabold leading-tight md:text-6xl">
+            Mitchell
+            <br />
+            Anderson
+          </h1>
+          <p className="mb-2 text-emerald-400 font-semibold">
+            Fullstack Software Engineer
+          </p>
+          <p className="mb-8 max-w-xl text-white/70">
+            I build reliable, data‑driven web products across the stack. I love
+            shipping clean UX, robust APIs, and measurable outcomes.
+          </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/projects"
+              className="rounded-full border border-white/10 px-5 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10"
+            >
+              View Projects
+            </Link>
+            <Link
+              href="/contact"
+              className="rounded-full bg-emerald-500 px-5 py-3 text-sm font-medium text-white hover:bg-emerald-400"
+            >
+              Contact Me
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className="flex items-center justify-center">
+          <div className="relative h-56 w-56 overflow-hidden rounded-full border border-white/10 shadow-lg md:h-72 md:w-72">
+            <Image
+              src="/avatar.png"
+              alt="Mitchell Anderson avatar"
+              fill
+              sizes="(max-width: 768px) 14rem, 18rem"
+              className="object-cover object-left scale-[1.15]"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
+        <div className="rounded-2xl border border-white/10 p-6">
+          <div className="text-3xl font-bold">3+</div>
+          <div className="text-sm text-white/70">Years building projects</div>
+        </div>
+        <div className="rounded-2xl border border-white/10 p-6">
+          <div className="text-3xl font-bold">Full‑stack</div>
+          <div className="text-sm text-white/70">TypeScript, Python, GCS</div>
+        </div>
+        <div className="rounded-2xl border border-white/10 p-6">
+          <div className="text-3xl font-bold">Open to work</div>
+          <div className="text-sm text-white/70">
+            Let’s build something great
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
