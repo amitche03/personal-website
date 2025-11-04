@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "Workflow Data Fabric",
     summary:
       "Full-stack features integrating external data lakes and AI agent workflows on ServiceNow.",
-    tags: ["TypeScript", "ServiceNow", "AI", "Trino"],
+    tags: ["JavaScript", "ServiceNow", "AI", "Trino", "Java", "Seismic", "Docker"],
   },
   {
     slug: "rover-rideshare",
@@ -22,4 +22,10 @@ export const projects: Project[] = [
       "iOS app aiding campus navigation for students with disabilities; research-collaboration project.",
     tags: ["SwiftUI", "Node", "CloudApps"],
   },
+  {
+    slug: "rice-savers",
+    title: "Rice Savers",
+    summary: "HACK NC Winning Project: Webapp for identifying crop disease using Image Analysis Machine Learning.",
+    tags: ["Python", "TensorFlow", "Flask", "HTML", "CSS"],
+  }
 ];

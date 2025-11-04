@@ -5,16 +5,16 @@ export default function AboutPage() {
       <div className="mb-10">
         <h1 className="text-4xl font-bold">About</h1>
         <p className="mt-3 max-w-2xl text-white/70">
-          I’m Mitchell Anderson from Winston‑Salem, NC, and a senior at UNC
-          Chapel Hill studying Computer Science (B.S.) with a minor in
-          Economics. I enjoy building products end‑to‑end and leading teams to
-          ship work that helps real people.
+          Hi, I’m Mitchell Anderson. I'm from Winston‑Salem, NC, and I'm a
+          senior at UNC Chapel Hill. At UNC, I'm earning a Computer Science
+          Degree (B.S.) and a minor in Economics. I enjoy building products
+          end‑to‑end and leading teams to ship work that helps real people.
         </p>
       </div>
 
       {/* Quick facts */}
       <div className="mb-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="rounded-xl border border-white/10 bg-white/[0.03] p-6 shadow-sm">
+        <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4 sm:p-6 shadow-sm">
           <div className="text-sm text-white/60">School</div>
           <div className="mt-1 text-lg font-semibold">UNC Chapel Hill</div>
           <div className="text-white/60">CS (B.S.), Minor in Economics</div>
@@ -41,7 +41,7 @@ export default function AboutPage() {
         <section>
           <h2 className="mb-3 text-xl font-semibold">Campus Involvement</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6">
+            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4 sm:p-6">
               <h3 className="font-semibold">App Team Carolina</h3>
               <p className="mt-1 text-sm text-white/70">
                 iOS Developer and Chief Marketing Officer. Built features for
@@ -119,7 +119,7 @@ export default function AboutPage() {
         <section>
           <h2 className="mb-3 text-xl font-semibold">Skills</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
+            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-3 sm:p-4">
               <div className="text-sm font-medium">Frontend</div>
               <div className="mt-1 text-sm text-white/70">
                 TypeScript, React, Next.js, Tailwind

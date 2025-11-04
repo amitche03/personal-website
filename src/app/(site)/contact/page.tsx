@@ -32,7 +32,7 @@ export default function ContactPage() {
         <Link
           href="https://github.com/amitche03"
           target="_blank"
-          className="group flex min-h-[96px] items-center rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition hover:-translate-y-0.5 hover:bg-white/[0.04]"
+          className="group flex min-h-[84px] items-center rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition hover:-translate-y-0.5 hover:bg-white/[0.04] sm:min-h-[96px]"
         >
           <div className="flex items-center gap-4">
             <div className="relative h-10 w-10 overflow-hidden rounded-lg bg-black">
@@ -56,7 +56,7 @@ export default function ContactPage() {
         <Link
           href="https://www.linkedin.com/in/mitchell-s-anderson"
           target="_blank"
-          className="group flex min-h-[96px] items-center rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition hover:-translate-y-0.5 hover:bg-white/[0.04]"
+          className="group flex min-h-[84px] items-center rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition hover:-translate-y-0.5 hover:bg-white/[0.04] sm:min-h-[96px]"
         >
           <div className="flex items-center gap-4">
             <div className="relative h-10 w-10 overflow-hidden rounded-lg">
@@ -80,7 +80,7 @@ export default function ContactPage() {
         <button
           onClick={copyEmail}
           aria-label="Copy email to clipboard"
-          className="group relative flex min-h-[96px] items-center rounded-2xl border border-white/10 bg-white/[0.02] p-5 text-left transition hover:-translate-y-0.5 hover:bg-white/[0.04]"
+          className="group relative flex min-h-[84px] items-center rounded-2xl border border-white/10 bg-white/[0.02] p-5 text-left transition hover:-translate-y-0.5 hover:bg-white/[0.04] sm:min-h-[96px]"
         >
           <div className="flex items-center gap-4">
             <div className="relative h-10 w-10 overflow-hidden rounded-lg">

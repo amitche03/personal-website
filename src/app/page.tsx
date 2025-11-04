@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="py-20">
-      <div className="grid items-center gap-10 md:grid-cols-2">
+    <div className="py-16 sm:py-20">
+      <div className="grid items-center gap-8 sm:gap-10 md:grid-cols-2">
         <div>
           <p className="mb-3 text-sm uppercase tracking-wide text-white/60">
             Hi there <span className="ml-1">👋</span> I’m
           </p>
-          <h1 className="mb-3 text-5xl font-extrabold leading-tight md:text-6xl">
+          <h1 className="mb-3 text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
             Mitchell
             <br />
             Anderson
@@ -39,20 +39,20 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-center">
-          <div className="relative h-56 w-56 overflow-hidden rounded-full border border-white/10 shadow-lg md:h-72 md:w-72">
+          <div className="relative h-40 w-40 overflow-hidden rounded-full border border-white/10 shadow-lg sm:h-56 sm:w-56 md:h-72 md:w-72">
             <Image
               src="/avatar.png"
               alt="Mitchell Anderson avatar"
               fill
               sizes="(max-width: 768px) 14rem, 18rem"
-              className="object-cover object-left scale-[1.15]"
+              className="object-cover object-left scale-[1.12] sm:scale-[1.15]"
               priority
             />
           </div>
         </div>
       </div>
 
-      <div className="mt-16 grid gap-6 md:grid-cols-3">
+      <div className="mt-12 grid gap-4 sm:mt-16 sm:gap-6 md:grid-cols-3">
         <div className="rounded-2xl border border-white/10 p-6">
           <div className="text-3xl font-bold">3+</div>
           <div className="text-sm text-white/70">Years building projects</div>
