@@ -7,6 +7,7 @@ export const projects: Project[] = [
     summary:
       "Full-stack features integrating external data lakes and AI agent workflows on ServiceNow.",
     tags: ["JavaScript", "ServiceNow", "AI", "Trino", "Java", "Seismic", "Docker"],
+    featured: true,
   },
   {
     slug: "rover-rideshare",
@@ -14,6 +15,7 @@ export const projects: Project[] = [
     summary:
       "Solo-founded ridesharing MVP with Python/Flask backend and React Native app; early revenue generated.",
     tags: ["Python", "Flask", "GCS", "React Native"],
+    featured: true,
   },
   {
     slug: "luminairy-accessible-nav",
@@ -25,7 +27,7 @@ export const projects: Project[] = [
   {
     slug: "rice-savers",
     title: "Rice Savers",
-    summary: "HACK NC Winning Project: Webapp for identifying crop disease using Image Analysis Machine Learning.",
+    summary: "HackNC Winning Project: Webapp for identifying crop disease using Image Analysis Machine Learning.",
     tags: ["Python", "TensorFlow", "Flask", "HTML", "CSS"],
   }
 ];

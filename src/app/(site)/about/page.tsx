@@ -1,182 +1,171 @@
+import AnimateOnScroll from "@/components/animate-on-scroll";
+import ExperienceTimeline from "@/components/experience-timeline";
+import SkillBars from "@/components/skill-bars";
+
 export default function AboutPage() {
   return (
-    <div className="py-16">
+    <div className="relative py-16">
+      {/* Gradient background effect */}
+      <div className="pointer-events-none absolute -top-40 right-0 h-[400px] w-[600px] rounded-full bg-emerald-500/5 blur-3xl" />
+
       {/* Header */}
-      <div className="mb-10">
-        <h1 className="text-4xl font-bold">About</h1>
-        <p className="mt-3 max-w-2xl text-white/70">
-          Hi, I’m Mitchell Anderson. I'm from Winston‑Salem, NC, and I'm a
-          senior at UNC Chapel Hill. At UNC, I'm earning a Computer Science
-          Degree (B.S.) and a minor in Economics. I enjoy building products
-          end‑to‑end and leading teams to ship work that helps real people.
-        </p>
-      </div>
+      <AnimateOnScroll animation="fade-up">
+        <div className="mb-10">
+          <h1 className="text-4xl font-bold">About</h1>
+          <p className="mt-3 max-w-2xl text-white/70">
+            Hi, I'm Mitchell Anderson. I'm from Winston‑Salem, NC, and I
+            recently graduated from UNC Chapel Hill in December 2025 with a
+            Computer Science degree (B.S.) and a minor in Economics. I enjoy
+            building products end‑to‑end and leading teams to ship work that
+            helps real people.
+          </p>
+        </div>
+      </AnimateOnScroll>
 
       {/* Quick facts */}
-      <div className="mb-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4 sm:p-6 shadow-sm">
-          <div className="text-sm text-white/60">School</div>
-          <div className="mt-1 text-lg font-semibold">UNC Chapel Hill</div>
-          <div className="text-white/60">CS (B.S.), Minor in Economics</div>
-        </div>
-        <div className="rounded-xl border border-white/10 bg-white/[0.03] p-6 shadow-sm">
-          <div className="text-sm text-white/60">Location</div>
-          <div className="mt-1 text-lg font-semibold">
-            Winston‑Salem ➜ Chapel Hill
+      <div className="mb-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <AnimateOnScroll animation="fade-up" delay={0}>
+          <div className="h-full rounded-xl border border-white/10 bg-white/[0.03] p-4 sm:p-6 shadow-sm transition-all duration-300 hover:border-emerald-500/20 hover:bg-white/[0.05]">
+            <div className="text-sm text-white/60">Education</div>
+            <div className="mt-1 text-lg font-semibold">UNC Chapel Hill</div>
+            <div className="text-white/60">CS (B.S.), Minor in Economics</div>
+            <div className="mt-2 text-xs text-emerald-400">Class of 2025</div>
           </div>
-          <div className="text-white/60">North Carolina</div>
-        </div>
-        <div className="rounded-xl border border-white/10 bg-white/[0.03] p-6 shadow-sm">
-          <div className="text-sm text-white/60">Focus</div>
-          <div className="mt-1 text-lg font-semibold">
-            Full‑stack Engineering
+        </AnimateOnScroll>
+        <AnimateOnScroll animation="fade-up" delay={100}>
+          <div className="h-full rounded-xl border border-white/10 bg-white/[0.03] p-6 shadow-sm transition-all duration-300 hover:border-emerald-500/20 hover:bg-white/[0.05]">
+            <div className="text-sm text-white/60">Location</div>
+            <div className="mt-1 text-lg font-semibold">
+              Bay Area, California
+            </div>
+            <div className="text-white/60">
+              Winston‑Salem, NC ➜ Milpitas, CA
+            </div>
           </div>
-          <div className="text-white/60">TypeScript, React/Next.js, Python</div>
-        </div>
+        </AnimateOnScroll>
+        <AnimateOnScroll animation="fade-up" delay={200}>
+          <div className="h-full rounded-xl border border-white/10 bg-white/[0.03] p-6 shadow-sm transition-all duration-300 hover:border-emerald-500/20 hover:bg-white/[0.05]">
+            <div className="text-sm text-white/60">Current Role</div>
+            <div className="mt-1 text-lg font-semibold">
+              Associate Software Engineer
+            </div>
+            <div className="text-white/60">ServiceNow • Data Connectors</div>
+          </div>
+        </AnimateOnScroll>
       </div>
 
       {/* Sections */}
-      <div className="space-y-10">
-        {/* Campus Involvement */}
-        <section>
-          <h2 className="mb-3 text-xl font-semibold">Campus Involvement</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4 sm:p-6">
-              <h3 className="font-semibold">App Team Carolina</h3>
-              <p className="mt-1 text-sm text-white/70">
-                iOS Developer and Chief Marketing Officer. Built features for
-                student‑run apps and led outreach for a 200+ member organization
-                to grow community, events, and awareness.
-              </p>
-              <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-white/70">
-                <li>
-                  Chief Marketing Officer — led student outreach & marketing
-                </li>
-                <li>iOS Developer — contributed to shipped app features</li>
-              </ul>
-            </div>
+      <div className="space-y-16">
+        {/* Work Experience Timeline */}
+        <AnimateOnScroll animation="fade-up">
+          <section>
+            <h2 className="mb-8 text-2xl font-bold">Work Experience</h2>
+            <ExperienceTimeline />
+          </section>
+        </AnimateOnScroll>
 
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6">
-              <h3 className="font-semibold">UNC Business Technology Club</h3>
-              <p className="mt-1 text-sm text-white/70">
-                Assistant Director of Events & Programming. Organized networking
-                events connecting undergraduates with companies in business and
-                technology.
-              </p>
+        {/* Skills with animated bars */}
+        <AnimateOnScroll animation="fade-up">
+          <section>
+            <h2 className="mb-8 text-2xl font-bold">Technical Skills</h2>
+            <SkillBars />
+          </section>
+        </AnimateOnScroll>
+
+        {/* Campus Involvement */}
+        <AnimateOnScroll animation="fade-up">
+          <section>
+            <h2 className="mb-6 text-2xl font-bold">Campus Involvement</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="group rounded-xl border border-white/10 bg-white/[0.02] p-4 sm:p-6 transition-all duration-300 hover:border-emerald-500/20 hover:bg-white/[0.04]">
+                <h3 className="font-semibold group-hover:text-emerald-400 transition-colors">
+                  App Team Carolina
+                </h3>
+                <p className="mt-1 text-sm text-white/70">
+                  iOS Developer and Chief Marketing Officer. Built features for
+                  student‑run apps and led outreach for a 200+ member
+                  organization to grow community, events, and awareness.
+                </p>
+                <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-white/70">
+                  <li>
+                    Chief Marketing Officer — led student outreach & marketing
+                  </li>
+                  <li>iOS Developer — contributed to shipped app features</li>
+                </ul>
+              </div>
+
+              <div className="group rounded-xl border border-white/10 bg-white/[0.02] p-6 transition-all duration-300 hover:border-emerald-500/20 hover:bg-white/[0.04]">
+                <h3 className="font-semibold group-hover:text-emerald-400 transition-colors">
+                  UNC Business Technology Club
+                </h3>
+                <p className="mt-1 text-sm text-white/70">
+                  Assistant Director of Events & Programming. Organized
+                  networking events connecting undergraduates with companies in
+                  business and technology.
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </AnimateOnScroll>
 
         {/* Teaching */}
-        <section>
-          <h2 className="mb-3 text-xl font-semibold">
-            Teaching Assistantships
-          </h2>
-          <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6">
-            <ul className="grid gap-2 text-sm text-white/80 md:grid-cols-2">
-              <li>
-                <span className="font-medium">COMP 110 —</span> Intro to CS
-                (Python)
-              </li>
-              <li>
-                <span className="font-medium">COMP 423 —</span> Software
-                Engineering (Angular, JS, Python, FastAPI)
-              </li>
-              <li>
-                <span className="font-medium">COMP 426 —</span> Modern Web
-                Programming (React, Next.js, TypeScript)
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Projects highlight */}
-        <section>
-          <h2 className="mb-3 text-xl font-semibold">Selected Projects</h2>
-          <div className="grid gap-6 md:grid-cols-2">
+        <AnimateOnScroll animation="fade-up">
+          <section>
+            <h2 className="mb-6 text-2xl font-bold">Teaching Assistantships</h2>
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6">
-              <h3 className="font-semibold">
-                Luminairy — Accessible Navigation
-              </h3>
-              <p className="mt-1 text-sm text-white/70">
-                iOS app for accessible campus navigation; collaborated with
-                researchers for user testing and validation.
-              </p>
-              <div className="mt-2 text-xs text-white/50">SwiftUI, iOS</div>
+              <ul className="grid gap-4 text-sm text-white/80 md:grid-cols-3">
+                <li className="rounded-lg bg-white/[0.02] p-3 transition-colors hover:bg-white/[0.05]">
+                  <span className="font-medium text-emerald-400">COMP 110</span>
+                  <div className="mt-1 text-white/60">Intro to CS (Python)</div>
+                </li>
+                <li className="rounded-lg bg-white/[0.02] p-3 transition-colors hover:bg-white/[0.05]">
+                  <span className="font-medium text-emerald-400">COMP 423</span>
+                  <div className="mt-1 text-white/60">Software Engineering</div>
+                </li>
+                <li className="rounded-lg bg-white/[0.02] p-3 transition-colors hover:bg-white/[0.05]">
+                  <span className="font-medium text-emerald-400">COMP 426</span>
+                  <div className="mt-1 text-white/60">
+                    Modern Web Programming
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6">
-              <h3 className="font-semibold">Student Leadership</h3>
-              <p className="mt-1 text-sm text-white/70">
-                Led a 200+ member student organization, coordinating projects,
-                workshops, and outreach to support student developers.
-              </p>
-              <div className="mt-2 text-xs text-white/50">Leadership, Ops</div>
-            </div>
-          </div>
-        </section>
-
-        {/* Skills */}
-        <section>
-          <h2 className="mb-3 text-xl font-semibold">Skills</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-3 sm:p-4">
-              <div className="text-sm font-medium">Frontend</div>
-              <div className="mt-1 text-sm text-white/70">
-                TypeScript, React, Next.js, Tailwind
-              </div>
-            </div>
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
-              <div className="text-sm font-medium">Backend</div>
-              <div className="mt-1 text-sm text-white/70">
-                Node, Python, Java, Flask, REST
-              </div>
-            </div>
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
-              <div className="text-sm font-medium">Data & Cloud</div>
-              <div className="mt-1 text-sm text-white/70">
-                GCS, Trino/Munin, Docker
-              </div>
-            </div>
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
-              <div className="text-sm font-medium">Mobile</div>
-              <div className="mt-1 text-sm text-white/70">
-                SwiftUI, React Native
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </AnimateOnScroll>
 
         {/* Personal: Beyond the Code */}
-        <section>
-          <h2 className="mb-3 text-xl font-semibold">Beyond the Code</h2>
-          <p className="mb-4 max-w-2xl text-white/70">
-            Outside of engineering, I recharge by staying active and exploring
-            new experiences. Here are a few things I’m into right now:
-          </p>
-          <div className="mb-5 flex flex-wrap gap-2">
-            {[
-              "🚵‍♂️ Mountain biking",
-              "⛷️ Skiing",
-              "🏎️ Formula One",
-              "🍽️ Trying new restaurants",
-              "🏃 Running",
-              "🏋️ Weightlifting",
-            ].map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-sm text-emerald-300 shadow-sm"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-          <a
-            href="/interests"
-            className="inline-flex items-center rounded-full border border-white/10 px-4 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white"
-          >
-            Explore more interests →
-          </a>
-        </section>
+        <AnimateOnScroll animation="fade-up">
+          <section>
+            <h2 className="mb-4 text-2xl font-bold">Beyond the Code</h2>
+            <p className="mb-6 max-w-2xl text-white/70">
+              Outside of engineering, I recharge by staying active and exploring
+              new experiences. Here are a few things I'm into right now:
+            </p>
+            <div className="mb-6 flex flex-wrap gap-2">
+              {[
+                "🚵‍♂️ Mountain biking",
+                "⛷️ Skiing",
+                "🏎️ Formula One",
+                "🍽️ Trying new restaurants",
+                "🏃 Running",
+                "🏋️ Weightlifting",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1.5 text-sm text-emerald-300 shadow-sm transition-all duration-200 hover:bg-emerald-500/20 hover:scale-105"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <a
+              href="/interests"
+              className="inline-flex items-center rounded-full border border-white/10 px-4 py-2 text-sm text-white/80 transition-all duration-200 hover:bg-white/10 hover:text-white hover:-translate-y-0.5"
+            >
+              Explore more interests →
+            </a>
+          </section>
+        </AnimateOnScroll>
       </div>
     </div>
   );
