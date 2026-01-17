@@ -13,8 +13,8 @@ export default function AboutPage() {
         <div className="mb-10">
           <h1 className="text-4xl font-bold">About</h1>
           <p className="mt-3 max-w-2xl text-white/70">
-            Hi, I'm Mitchell Anderson. I'm from Winston‑Salem, NC, and I
-            recently graduated from UNC Chapel Hill in December 2025 with a
+            Hi, I&apos;m Mitchell Anderson. I&apos;m from Winston‑Salem, NC, and
+            I recently graduated from UNC Chapel Hill in December 2025 with a
             Computer Science degree (B.S.) and a minor in Economics. I enjoy
             building products end‑to‑end and leading teams to ship work that
             helps real people.
@@ -139,7 +139,7 @@ export default function AboutPage() {
             <h2 className="mb-4 text-2xl font-bold">Beyond the Code</h2>
             <p className="mb-6 max-w-2xl text-white/70">
               Outside of engineering, I recharge by staying active and exploring
-              new experiences. Here are a few things I'm into right now:
+              new experiences. Here are a few things I&apos;m into right now:
             </p>
             <div className="mb-6 flex flex-wrap gap-2">
               {[

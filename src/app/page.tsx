@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative grid items-center gap-8 sm:gap-10 md:grid-cols-2">
         <div>
           <p className="animate-on-load animate-fade-in-down delay-100 mb-3 text-sm uppercase tracking-wide text-white/60">
-            Hi there <span className="ml-1">👋</span> I'm
+            Hi there <span className="ml-1">👋</span> I&apos;m
           </p>
           <h1 className="animate-on-load animate-fade-in-up delay-100 mb-3 text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
             Mitchell
