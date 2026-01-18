@@ -147,8 +147,180 @@ export default function InterestsPage() {
         ))}
       </div>
 
+      {/* Personal Interests Section */}
+      <div className="mt-20">
+        <AnimateOnScroll animation="fade-up">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold">When I&apos;m Not Coding</h2>
+            <p className="mt-2 text-white/70">
+              Life&apos;s too short to only stare at screens. Here&apos;s what
+              keeps me energized.
+            </p>
+          </div>
+        </AnimateOnScroll>
+
+        {/* Hobby Cards */}
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Skiing */}
+          <AnimateOnScroll animation="fade-up" delay={0}>
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-sky-500/10 to-blue-600/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-sky-400/30 hover:shadow-lg hover:shadow-sky-500/10">
+              <div className="absolute right-3 top-3 text-5xl opacity-20 transition-transform duration-500 group-hover:scale-110 group-hover:opacity-30">
+                ⛷️
+              </div>
+              <div className="relative">
+                <h3 className="text-xl font-semibold text-sky-400">Skiing</h3>
+                <p className="mt-2 text-sm text-white/70">
+                  Nothing beats fresh powder and mountain views. Ask me about
+                  any of these places!
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-sky-500/20 px-2 py-1 text-xs text-sky-300">
+                    Utah
+                  </span>
+                  <span className="rounded-full bg-sky-500/20 px-2 py-1 text-xs text-sky-300">
+                    Colorado
+                  </span>
+                  <span className="rounded-full bg-sky-500/20 px-2 py-1 text-xs text-sky-300">
+                    Banff
+                  </span>
+                  <span className="rounded-full bg-sky-500/20 px-2 py-1 text-xs text-sky-300">
+                    Tahoe
+                  </span>
+                </div>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          {/* Mountain Biking */}
+          <AnimateOnScroll animation="fade-up" delay={50}>
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-green-500/10 to-emerald-600/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-green-400/30 hover:shadow-lg hover:shadow-green-500/10">
+              <div className="absolute right-3 top-3 text-5xl opacity-20 transition-transform duration-500 group-hover:scale-110 group-hover:opacity-30">
+                🚵
+              </div>
+              <div className="relative">
+                <h3 className="text-xl font-semibold text-green-400">
+                  Mountain Biking
+                </h3>
+                <p className="mt-2 text-sm text-white/70">
+                  Single track trails, technical descents, and that post-ride
+                  exhaustion. Pure therapy.
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-green-500/20 px-2 py-1 text-xs text-green-300">
+                    Trail riding
+                  </span>
+                  <span className="rounded-full bg-green-500/20 px-2 py-1 text-xs text-green-300">
+                    Bay Area trails
+                  </span>
+                </div>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          {/* Formula 1 */}
+          <AnimateOnScroll animation="fade-up" delay={100}>
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-red-500/10 to-orange-600/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-red-400/30 hover:shadow-lg hover:shadow-red-500/10">
+              <div className="absolute right-3 top-3 text-5xl opacity-20 transition-transform duration-500 group-hover:scale-110 group-hover:opacity-30">
+                🏎️
+              </div>
+              <div className="relative">
+                <h3 className="text-xl font-semibold text-red-400">
+                  Formula 1
+                </h3>
+                <p className="mt-2 text-sm text-white/70">
+                  The strategy, the drama, the tech—it&apos;s the perfect sport.
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-red-500/20 px-2 py-1 text-xs text-red-300">
+                    Race weekends
+                  </span>
+                  <span className="rounded-full bg-red-500/20 px-2 py-1 text-xs text-red-300">
+                    Data nerd
+                  </span>
+                </div>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          {/* Traveling */}
+          <AnimateOnScroll animation="fade-up" delay={150}>
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-purple-500/10 to-indigo-600/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+              <div className="absolute right-3 top-3 text-5xl opacity-20 transition-transform duration-500 group-hover:scale-110 group-hover:opacity-30">
+                ✈️
+              </div>
+              <div className="relative">
+                <h3 className="text-xl font-semibold text-purple-400">
+                  Traveling
+                </h3>
+                <p className="mt-2 text-sm text-white/70">
+                  New places, new perspectives.
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-purple-500/20 px-2 py-1 text-xs text-purple-300">
+                    Adventure
+                  </span>
+                  <span className="rounded-full bg-purple-500/20 px-2 py-1 text-xs text-purple-300">
+                    Photography
+                  </span>
+                </div>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          {/* Food & Restaurants */}
+          <AnimateOnScroll animation="fade-up" delay={200}>
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-amber-500/10 to-yellow-600/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-amber-400/30 hover:shadow-lg hover:shadow-amber-500/10">
+              <div className="absolute right-3 top-3 text-5xl opacity-20 transition-transform duration-500 group-hover:scale-110 group-hover:opacity-30">
+                🍽️
+              </div>
+              <div className="relative">
+                <h3 className="text-xl font-semibold text-amber-400">
+                  Food Explorer
+                </h3>
+                <p className="mt-2 text-sm text-white/70">
+                  Always hunting for the next great restaurant.
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-amber-500/20 px-2 py-1 text-xs text-amber-300">
+                    New cuisines
+                  </span>
+                  <span className="rounded-full bg-amber-500/20 px-2 py-1 text-xs text-amber-300">
+                    Local gems
+                  </span>
+                </div>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          {/* Coffee */}
+          <AnimateOnScroll animation="fade-up" delay={250}>
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-orange-500/10 to-amber-700/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+              <div className="absolute right-3 top-3 text-5xl opacity-20 transition-transform duration-500 group-hover:scale-110 group-hover:opacity-30">
+                ☕
+              </div>
+              <div className="relative">
+                <h3 className="text-xl font-semibold text-orange-400">
+                  Coffee Culture
+                </h3>
+                <p className="mt-2 text-sm text-white/70">
+                  Latte art appreciator.
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-orange-500/20 px-2 py-1 text-xs text-orange-300">
+                    Pour-over
+                  </span>
+                  <span className="rounded-full bg-orange-500/20 px-2 py-1 text-xs text-orange-300">
+                    Local roasters
+                  </span>
+                </div>
+              </div>
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </div>
+
       <AnimateOnScroll animation="fade-up" delay={400}>
-        <div className="mt-10 text-sm text-white/60">
+        <div className="mt-16 text-sm text-white/60">
           Want the professional story instead?{" "}
           <a
             href="/about"

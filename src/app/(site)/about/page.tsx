@@ -1,6 +1,7 @@
 import AnimateOnScroll from "@/components/animate-on-scroll";
 import ExperienceTimeline from "@/components/experience-timeline";
 import SkillBars from "@/components/skill-bars";
+import TechStack from "@/components/tech-stack";
 
 export default function AboutPage() {
   return (
@@ -64,11 +65,15 @@ export default function AboutPage() {
           </section>
         </AnimateOnScroll>
 
-        {/* Skills with animated bars */}
+        {/* Technologies & Frameworks */}
         <AnimateOnScroll animation="fade-up">
           <section>
-            <h2 className="mb-8 text-2xl font-bold">Technical Skills</h2>
-            <SkillBars />
+            <h2 className="mb-8 text-2xl font-bold">
+              Technologies & Frameworks
+            </h2>
+            <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 md:p-8">
+              <TechStack />
+            </div>
           </section>
         </AnimateOnScroll>
 

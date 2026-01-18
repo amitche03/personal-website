@@ -73,7 +73,7 @@ export default function Home() {
         <div className="flex items-center justify-center">
           <div className="animate-on-load animate-scale-in delay-200 relative h-40 w-40 overflow-hidden rounded-full border border-white/10 shadow-lg sm:h-56 sm:w-56 md:h-72 md:w-72">
             <Image
-              src="/avatar.png"
+              src="/photo.png"
               alt="Mitchell Anderson avatar"
               fill
               sizes="(max-width: 768px) 14rem, 18rem"
@@ -90,8 +90,10 @@ export default function Home() {
           <div className="text-sm text-white/70">Years building projects</div>
         </div>
         <div className="animate-on-load animate-fade-in-up delay-600 rounded-2xl border border-white/10 p-6 transition-all duration-200 hover:bg-white/[0.02] hover:-translate-y-0.5">
-          <div className="text-3xl font-bold">Full‑stack</div>
-          <div className="text-sm text-white/70">TypeScript, Python, GCS</div>
+          <div className="text-3xl font-bold">Full‑stack Developer</div>
+          <div className="text-sm text-white/70">
+            JavaScript, Java, React, Python
+          </div>
         </div>
         <div className="animate-on-load animate-fade-in-up delay-700 rounded-2xl border border-white/10 p-6 transition-all duration-200 hover:bg-white/[0.02] hover:-translate-y-0.5">
           <div className="text-2xl font-bold">SWE @ ServiceNow</div>
