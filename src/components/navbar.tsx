@@ -88,7 +88,7 @@ export default function Navbar() {
 
       {/* Mobile menu overlay */}
       <div
-        className={`fixed inset-0 top-16 z-30 bg-background/95 backdrop-blur-lg transition-all duration-300 md:hidden ${
+        className={`fixed inset-0 top-16 z-50 bg-background transition-all duration-300 md:hidden ${
           mobileOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
