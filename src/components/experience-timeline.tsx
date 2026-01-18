@@ -15,7 +15,7 @@ const experiences: Experience[] = [
   {
     title: "Associate Software Engineer",
     company: "ServiceNow",
-    location: "Milpitas, CA",
+    location: "Santa Clara, CA",
     period: "Jan 2026 – Present",
     description:
       "Building full-stack features for the Data Connectors team, integrating external data lakes and AI agent workflows on the Now Platform.",
@@ -25,8 +25,8 @@ const experiences: Experience[] = [
   {
     title: "Software Engineering Intern",
     company: "ServiceNow",
-    location: "San Diego, CA",
-    period: "May 2024 – Aug 2024",
+    location: "Santa Clara, CA",
+    period: "May 2025 – Aug 2025",
     description:
       "Developed full-stack features for Workflow Data Fabric, enabling seamless integration with external data sources.",
     tags: ["JavaScript", "ServiceNow", "Docker", "Seismic"],

@@ -29,7 +29,7 @@ export default function AboutPage() {
           <div className="h-full rounded-xl border border-white/10 bg-white/[0.03] p-4 sm:p-6 shadow-sm transition-all duration-300 hover:border-emerald-500/20 hover:bg-white/[0.05]">
             <div className="text-sm text-white/60">Education</div>
             <div className="mt-1 text-lg font-semibold">UNC Chapel Hill</div>
-            <div className="text-white/60">CS (B.S.), Minor in Economics</div>
+            <div className="text-white/60">Computer Science (B.S.)</div>
             <div className="mt-2 text-xs text-emerald-400">Class of 2025</div>
           </div>
         </AnimateOnScroll>
