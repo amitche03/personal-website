@@ -90,7 +90,7 @@ export default function Footer() {
             <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-white/40">
               Connect
             </h3>
-            <div className="flex gap-4">
+            <div className="flex w-48 justify-between px-4">
               {socialLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -106,8 +106,9 @@ export default function Footer() {
             <a
               href="/2025%20Mitchell%20Anderson%20SWE%20Resume%20%20copy.pdf"
               download="Mitchell_Anderson_Resume.pdf"
-              className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm text-white/70 transition-all hover:border-emerald-500/30 hover:text-white"
+              className="mt-5 flex w-48 items-center justify-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm text-white/70 transition-all hover:border-emerald-500/30 hover:text-white"
             >
+              Download Resume
               <svg
                 className="h-4 w-4"
                 fill="none"
@@ -121,7 +122,6 @@ export default function Footer() {
                   d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                 />
               </svg>
-              Download Resume
             </a>
           </div>
         </div>
@@ -132,7 +132,6 @@ export default function Footer() {
             © {new Date().getFullYear()} Mitchell Anderson. All rights
             reserved.
           </p>
-          <p>Built with Next.js & Tailwind CSS</p>
         </div>
       </div>
     </footer>
