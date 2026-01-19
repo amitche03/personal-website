@@ -48,8 +48,17 @@ export default function Home() {
               View Projects
             </Link>
             <Link
-              href="/Mitchell_Anderson_Resume.pdf"
-              target="_blank"
+              href="/resume"
+              onClick={() => {
+                // Trigger download while also navigating to resume page
+                const link = document.createElement("a");
+                link.href =
+                  "/2025%20Mitchell%20Anderson%20SWE%20Resume%20%20copy.pdf";
+                link.download = "Mitchell_Anderson_Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm font-medium text-white/80 transition-all duration-200 hover:text-white hover:bg-white/10 hover:-translate-y-0.5"
             >
               <svg

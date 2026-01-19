@@ -143,8 +143,8 @@ export default function AboutPage() {
           <section>
             <h2 className="mb-4 text-2xl font-bold">Beyond the Code</h2>
             <p className="mb-6 max-w-2xl text-white/70">
-              Outside of engineering, I recharge by staying active and exploring
-              new experiences. Here are a few things I&apos;m into right now:
+              Outside of engineering, I recharge by staying active and trying
+              new things. Here's a few things I&apos;m into right now:
             </p>
             <div className="mb-6 flex flex-wrap gap-2">
               {[
