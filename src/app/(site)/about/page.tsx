@@ -1,6 +1,5 @@
 import AnimateOnScroll from "@/components/animate-on-scroll";
 import ExperienceTimeline from "@/components/experience-timeline";
-import SkillBars from "@/components/skill-bars";
 import TechStack from "@/components/tech-stack";
 
 export default function AboutPage() {
@@ -144,7 +143,7 @@ export default function AboutPage() {
             <h2 className="mb-4 text-2xl font-bold">Beyond the Code</h2>
             <p className="mb-6 max-w-2xl text-white/70">
               Outside of engineering, I recharge by staying active and trying
-              new things. Here's a few things I&apos;m into right now:
+              new things. Here&apos;s a few things I&apos;m into right now:
             </p>
             <div className="mb-6 flex flex-wrap gap-2">
               {[
