@@ -99,7 +99,7 @@ export default function Home() {
           <div className="text-sm text-white/70">Years building projects</div>
         </div>
         <div className="animate-on-load animate-fade-in-up delay-600 rounded-2xl border border-white/10 p-6 transition-all duration-200 hover:bg-white/[0.02] hover:-translate-y-0.5">
-          <div className="text-3xl font-bold">Full‑stack Developer</div>
+          <div className="text-3xl font-bold">Full‑Stack Developer</div>
           <div className="text-sm text-white/70">
             JavaScript, Java, React, Python
           </div>
